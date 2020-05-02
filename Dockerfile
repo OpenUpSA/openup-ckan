@@ -17,7 +17,8 @@ RUN pip install -r requirements-plugins.txt
 
 ADD Procfile who.ini ckan.ini ./
 
-RUN useradd --system --uid 900 --shell /bin/false ckan
+RUN useradd --system --uid 900 --shell /bin/false ckan && \
+    chown -R ckan:ckan /app
 
 USER ckan
 EXPOSE 5000

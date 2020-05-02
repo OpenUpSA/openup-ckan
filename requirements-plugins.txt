@@ -1,3 +1,5 @@
-git+https://github.com/okfn/ckanext-s3filestore.git@v0.1.1
+boto3 # For ckanext-s3filestore
+git+https://github.com/keitaroinc/ckanext-s3filestore.git@v0.0.8
+#git+https://github.com/okfn/ckanext-s3filestore.git@v0.1.1
 ckanext-sentry==0.0.1
 ckanext-envvars==0.0.1
