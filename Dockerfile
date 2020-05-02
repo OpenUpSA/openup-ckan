@@ -15,9 +15,7 @@ RUN pip install -r requirements.txt
 ADD requirements-plugins.txt .
 RUN pip install -r requirements-plugins.txt
 
-ADD Procfile Procfile
-ADD who.ini who.ini
-ADD ckan.ini ckan.ini
+ADD Procfile who.ini ckan.ini .
 
 RUN useradd --system --uid 900 --shell /bin/false ckan
 
