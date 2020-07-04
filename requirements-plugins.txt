@@ -1,5 +1,6 @@
 boto3 # For ckanext-s3filestore
 git+https://github.com/ckan/ckantoolkit.git@d3c9942
 git+https://github.com/okfn/ckanext-s3filestore.git@33d4b60
-ckanext-sentry==0.0.1
 ckanext-envvars==0.0.1
+ckanext-sentry==0.0.2
+-e git+https://github.com/ckan/ckanext-googleanalytics.git@v2.0.2#egg=ckanext-googleanalytics
