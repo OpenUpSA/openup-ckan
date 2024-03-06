@@ -36,3 +36,26 @@ dokku config:set ckan CKAN_SQLALCHEMY_URL=postgres://ckan_default:password@host/
                       CKAN___CKANEXT__S3FILESTORE__REGION_NAME=eu-west-1 \
                       CKAN___CKANEXT__S3FILESTORE__SIGNATURE_VERSION=s3v4
 ```
+
+## Production
+
+Deployment
+
+    git remote add dokku-prod dokku@hetzner1.openup.org.za:openupckan
+    git push dokku-prod master
+
+## User Management
+
+
+### Adding
+Registration has been disabled on the web UI due to spam. To register a new user:
+
+    ssh hetzner1@openup.org.za
+    dokku enter openup-ckan
+    paster --plugin=ckan user add newusername email=test@test.test password=test12345
+
+### Removing
+
+    ssh hetzner1@openup.org.za
+    dokku enter openup-ckan
+    paster --plugin=ckan user remove newusername
