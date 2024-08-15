@@ -1,4 +1,4 @@
-# From https://github.com/ckan/ckan/blob/ckan-2.8.4/requirements.txt
+# From https://github.com/ckan/ckan/blob/ckan-2.8.12/requirements.txt
 
 argparse==1.4.0           # via ofs
 Babel==2.3.4              # via flask-babel
