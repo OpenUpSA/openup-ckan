@@ -7,7 +7,7 @@ Dokku Dockerfile-based deployment repository for CKAN for OpenUp's data portal
 
 Initialise the database
 
-    docker-compose run --rm web paster --plugin=ckan db init -c ckan.ini
+    docker compose run --rm web paster --plugin=ckan db init -c ckan.ini
 
 
 ## Deployment
