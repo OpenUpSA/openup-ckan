@@ -27,7 +27,7 @@ services:
       - ./ckan.ini:/app/ckan.ini
       - ./who.ini:/app/who.ini
       - ckan-filestore:/var/lib/ckan
-    command: ["/app/bin/wait-for-deps.sh", "paster", "serve", "ckan.ini"]
+    command: ["/app/bin/wait-for-deps.sh", "ckan", "run"]
 
   worker:
     depends_on:
