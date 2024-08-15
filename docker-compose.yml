@@ -61,7 +61,7 @@ services:
     image: redis:latest
 
   db:
-    image: postgres:11.4
+    image: postgres:12.17
     environment:
       - POSTGRES_USER=ckan
       - POSTGRES_PASSWORD=password
